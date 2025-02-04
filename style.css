@@ -1,0 +1,57 @@
+body{
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    background: rgb(155,242,238);
+    background: linear-gradient(111deg, rgba(155,242,238,1) 1%, rgba(0,194,255,1) 100%);
+    color: white;
+    
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+.curent-weather{
+    align-self: center;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.weather-icon{
+    align-self: center;
+}
+.icon{
+    height: 50dvh;
+    width: 50dvh;
+   
+}
+
+.weather-condition{
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 3;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.info-detail{
+    display:flex;
+    justify-content: center;
+    flex-grow: 3;
+    text-align: center;
+    font-size: 4rem;
+    height: 20dvh;
+    width: 30dvh;
+
+}

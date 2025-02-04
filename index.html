@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Kanit  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+
+    
     <title>Meteo</title>
 </head>
+
 <body>
     <div class="weather">
-        <img src="other" id="weatherIcon" alt="">
-        <div id="weatherCondition">inconnu</div>
-        <div id="degree">0°c</div>
-        <div id="windSpeed">0 m/s</div>
-        <div id="humidity">0 %</div>
+        <div class="curent-weather">
+            <div class="weather-icon">
+                <img src="placeholder" class="icon " id="weatherIcon" alt="">
+            </div>
+            <div class="weather-condition" id="weatherCondition">inconnu</div>
+        </div>
+        <div class="info">
+            <div class="info-detail">
+                <img src="./img/thermostat.svg" alt="">
+                <div id="degree">0°c</div>
+            </div>
+            <div class="info-detail">
+                <img src="./img/wind.svg" alt="">
+                <div id="windSpeed">0 m/s</div>
+            </div>
+            <div class="info-detail">
+                <img src="./img/humidity_percentage.svg" alt="">
+                <div >0 %</div>
+            </div>
+        </div>
     </div>
 
     <script src="meteo.js">
     </script>
 </body>
+
 </html>
