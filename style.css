@@ -5,6 +5,7 @@ body{
     background: rgb(155,242,238);
     background: linear-gradient(111deg, rgba(155,242,238,1) 1%, rgba(0,194,255,1) 100%);
     color: white;
+    margin: 0px;
     
 }
 
@@ -16,7 +17,7 @@ body{
 
 .curent-weather{
     align-self: center;
-    flex-grow: 5;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
     
@@ -25,22 +26,22 @@ body{
 .weather-icon{
     align-self: center;
 }
+
 .icon{
     height: 50dvh;
     width: 50dvh;
-   
 }
+
 
 .weather-condition{
     text-align: center;
     font-size: 4rem;
-    
 }
 
 .info{
     display: flex;
     flex-direction: row;
-    flex-grow: 3;
+    flex-grow: 6;
     flex-wrap:wrap;
     justify-content: space-around;
 }
@@ -53,5 +54,35 @@ body{
     font-size: 4rem;
     height: 20dvh;
     width: 30dvh;
+}
+
+.detail{
+    align-content: center;
+}
+
+
+@media (max-width: 700px) {
+    .icon{
+        height: 30dvh;
+        width: 30dvh;
+    }
+
+    .weather-condition{
+        
+        font-size: 3rem;
+    }
+
+    .info{
+   
+        flex-direction: column;
+        align-content: center;
+        
+    }
+
+    .info-detail{
+        font-size: 2rem;
+        height: 10dvh;
+        width: 30dvh;
+}
 
 }

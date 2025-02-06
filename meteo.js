@@ -61,7 +61,7 @@ const weatherCondition = {
     801 : "Quelques nuages",
     802 : "Nuages éparse ",
     803 : "Nuages fréquent",
-    804 : "Ciel vouvert",
+    804 : "Ciel couvert",
 
 }
 window.onload = function () {
